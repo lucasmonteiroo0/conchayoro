@@ -2,11 +2,12 @@ name: jobs examples
 
 on:
   push
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: create an artifact for reuse
+      - name: create an artifact for reuse (changed)
         run: echo “Full featured artifact” > build-result.txt
       - uses: actions/upload-artifact@v2
         with:
